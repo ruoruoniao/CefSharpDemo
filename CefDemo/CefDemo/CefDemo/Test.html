@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="ad">avcese</div>
+    <button id="add">aa</button>
+    <script>
+        window.onload = function () {
+            try{
+                document.getElementById("add").addEventListener("click", function () {
+                    document.getElementById("ad").innerHTML = "aa";
+                    window.external.Init("b");
+                });
+            }
+            catch (ex) {
+                alert(ex.message);
+            }
+        }
+        
+        function Init(a) {
+            return a;
+        }
+    </script>
+</body>
+</html>
